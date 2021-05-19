@@ -11,18 +11,16 @@ function App() {
   return (
     <Container>
       <HashRouter>
-        <>
+        <div className="page">
           <SearchBar />
           <Switch>
             <Route exact path="/">
               <Description />
               <Menu />
             </Route>
-
-            <Route></Route>
           </Switch>
           <Footer />
-        </>
+        </div>
       </HashRouter>
     </Container>
   );

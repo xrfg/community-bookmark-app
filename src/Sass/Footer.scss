@@ -1,0 +1,14 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding: 1.5rem;
+  width: 100%;
+  background-color: lightgreen;
+  .navbar {
+    list-style-type: none;
+    li {
+      display: inline;
+      padding: 1rem;
+    }
+  }
+}
