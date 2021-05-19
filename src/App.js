@@ -8,7 +8,7 @@ import Container from "./Context/Container";
 
 function App() {
   fetch(
-    "https://spreadsheets.google.com/feeds/cells/1mkGvGf_t-w4Zb0UyIAkDkqoA1Bt8SemKoYHRWcB7Y7c/1/public/full?alt=json"
+    "https://spreadsheets.google.com/feeds/list/1mkGvGf_t-w4Zb0UyIAkDkqoA1Bt8SemKoYHRWcB7Y7c/1/public/values?alt=json"
   )
     .then((res) => res.json())
     .then((json) => {
@@ -20,7 +20,7 @@ function App() {
         const formattedRow = {};
 
         for (const key in row) {
-          if (key.startsWith("gs$")) {
+          if (key.startsWith("gsx$")) {
             /* The actual row names from your spreadsheet
              * are formatted like "gsx$title".
              * Therefore, we need to find keys in this object
@@ -28,7 +28,7 @@ function App() {
              * out to get the actual row name
              */
 
-            formattedRow[key.replace("gs$", "")] = row[key].$t;
+            formattedRow[key.replace("gsx$", "")] = row[key].$t;
           }
         }
 
