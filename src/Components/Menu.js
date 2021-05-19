@@ -4,8 +4,10 @@ import { MyContext } from "../Context/MyContext";
 import Bookmark from "./Bookmark";
 
 export default function Menu() {
-  const { data, dispatch } = useContext(MyContext);
-  console.log(data);
+  const { books, videos, memes, dispatch } = useContext(MyContext);
+  console.log(books);
+  console.log(videos);
+  console.log(memes);
 
   const icons = ["books", "videos", "images"];
 
