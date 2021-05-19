@@ -38,8 +38,6 @@ body {
   position: relative;
   min-height: 100vh;
   /*   min-height: -webkit-fill-available; */
-  width: 100vw;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
+  min-width: 100vw;
+  background-color: khaki;
 }

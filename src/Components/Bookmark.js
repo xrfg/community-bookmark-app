@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Bookmark() {
+export default function Bookmark(props) {
   return (
     <div>
-      <h1>IM A BOOKMARK</h1>
+      <h1>{props.name}</h1>
     </div>
   );
 }

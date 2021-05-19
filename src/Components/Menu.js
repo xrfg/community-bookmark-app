@@ -6,20 +6,14 @@ import Bookmark from "./Bookmark";
 export default function Menu() {
   const { data, dispatch } = useContext(MyContext);
   console.log(data);
+
+  const icons = ["books", "videos", "images"];
+
   return (
     <div>
-      <Route path="/:id">
-        <Bookmark />
-      </Route>
-      <div>
-        <h2>Books</h2>
-      </div>
-      <div>
-        <h2>videos</h2>
-      </div>
-      <div>
-        <h2>images</h2>
-      </div>
+      {icons.map((icon) => {
+        return <Bookmark name={icon} key={icon} />;
+      })}
     </div>
   );
 }
