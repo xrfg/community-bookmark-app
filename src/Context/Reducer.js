@@ -1,7 +1,11 @@
 export const Reducer = (state, action) => {
   switch (action.type) {
-    case "load":
-      return { data: action.payload };
+    case "loadbooks":
+      return { books: action.payload };
+    case "loadvideos":
+      return { videos: action.payload };
+    case "loadmemes":
+      return { memes: action.payload };
     default:
       return state;
   }
