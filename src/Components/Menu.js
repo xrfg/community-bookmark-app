@@ -1,20 +1,27 @@
 import React, { useContext } from "react";
-import { Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { MyContext } from "../Context/MyContext";
 import Bookmark from "./Bookmark";
 
 export default function Menu() {
-  const { books, videos, memes, dispatch } = useContext(MyContext);
+  const { books, videos, memes } = useContext(MyContext);
   console.log(books);
   console.log(videos);
   console.log(memes);
 
-  const icons = ["books", "videos", "images"];
+  const titles = ["Trans*/NB Books", "videos", "memes"];
+  const urls = ["trans-nb-books", "videos", "memes"];
 
   return (
     <div>
-      {icons.map((icon) => {
-        return <Bookmark name={icon} key={icon} />;
+      {titles.map((icon, i) => {
+        const url = urls[i];
+
+        return (
+          <Link to={{ pathname: `/${url}` }}>
+            <Bookmark name={icon} key={icon} />
+          </Link>
+        );
       })}
     </div>
   );
