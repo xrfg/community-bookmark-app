@@ -1,11 +1,11 @@
 export const Reducer = (state, action) => {
   switch (action.type) {
     case "loadbooks":
-      return { books: action.payload };
+      return { ...state, books: action.payload };
     case "loadvideos":
-      return { videos: action.payload };
+      return { ...state, videos: action.payload };
     case "loadmemes":
-      return { memes: action.payload };
+      return { ...state, memes: action.payload };
     default:
       return state;
   }
