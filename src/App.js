@@ -7,7 +7,7 @@ import SearchBar from "./Components/SearchBar";
 import Container from "./Context/Container";
 
 function App() {
-  fetch("https://spreadsheets.google.com/feeds/list/1mkGvGf_t-w4Zb0UyIAkDkqoA1Bt8SemKoYHRWcB7Y7c/1/public/values?alt=json")
+  fetch("https://spreadsheets.google.com/feeds/list/1j3BaZyBavHXT06K9jXdaM8bzWkNVDbk_R092LypR4UM/1/public/values?alt=json")
   .then(res => res.json())
   .then(json => {
     const data = [] /* this array will eventually be populated with the contents of the spreadsheet's rows */
