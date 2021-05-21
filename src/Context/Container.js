@@ -10,7 +10,7 @@ export default function Container(props) {
   useEffect(() => {
     // componentDidMount
     fetch(
-      "https://spreadsheets.google.com/feeds/list/1j3BaZyBavHXT06K9jXdaM8bzWkNVDbk_R092LypR4UM/1/public/values?alt=json"
+      "https://spreadsheets.google.com/feeds/list/19Aop-BCVFK-HVQbakYBdosdGIJAmWUQc92HdZjJLTJ0/1/public/full?alt=json"
     )
       .then((res) => res.json())
       .then((json) => {
