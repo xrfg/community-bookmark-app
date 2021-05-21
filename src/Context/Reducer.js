@@ -6,6 +6,10 @@ export const Reducer = (state, action) => {
       return { ...state, videos: action.payload };
     case "loadmemes":
       return { ...state, memes: action.payload };
+    case "searchbooks":
+      return { ...state, books: action.payload };
+    case "searchstring":
+      return { ...state, searchString: action.payload };
     default:
       return state;
   }

@@ -1,4 +1,5 @@
 import React from "react";
+import "../Sass/TransForm.scss";
 
 export default function TransForm() {
   const scriptURL =
@@ -15,23 +16,24 @@ export default function TransForm() {
   return (
     <>
       <div className="form-box">
+        <h3>Submit a book to the list!</h3>
         <form onSubmit={handleSubmit} name="submit-to-google-sheet">
           <label>
             Title:
-            <input type="text" name="Title" placeholder="title" required />
+            <input type="text" name="Title" placeholder="Title" required />
           </label>
 
           <label>
             Author:
-            <input type="text" name="Author" placeholder="author" required />
+            <input type="text" name="Author" placeholder="Author" required />
           </label>
 
           <label>
             Fiction/Non-Fiction/Other:
             <input
               type="text"
-              name="Fiction/Non-Fiction/Other"
-              placeholder="genre"
+              name="Fiction/NonFiction/Other"
+              placeholder="Genre"
             />
           </label>
 
@@ -40,7 +42,7 @@ export default function TransForm() {
             <input
               type="text"
               name="Trans* or NB author?"
-              placeholder="Trans* or NB author?"
+              placeholder="Yes/No"
               required
             />
           </label>
@@ -50,7 +52,7 @@ export default function TransForm() {
             <input
               type="text"
               name="Trans* or NB character(s)?"
-              placeholder="Trans* or NB character(s)?"
+              placeholder="Yes/No/Gender(s)"
               required
             />
           </label>
@@ -75,7 +77,8 @@ export default function TransForm() {
             />
           </label>
 
-          <button type="submit">send</button>
+          <button type="submit">Send</button>
+          <button type="reset">Reset</button>
         </form>
       </div>
     </>
