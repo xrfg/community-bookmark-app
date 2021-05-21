@@ -4,8 +4,6 @@ import Description from "./Components/Description";
 import Footer from "./Components/Footer";
 import Menu from "./Components/Menu";
 import PageNotFound from "./Components/PageNotFound";
-import SearchBar from "./Components/SearchBar";
-import TransForm from "./Components/TransForm";
 import Trans from "./Components/Trans";
 
 import Container from "./Context/Container";
@@ -16,7 +14,6 @@ function App() {
     <Container>
       <HashRouter>
         <div className="page">
-          <SearchBar />
           <Switch>
             <Route exact path="/">
               <Description />

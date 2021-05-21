@@ -2,7 +2,7 @@ import React, { useEffect, useReducer } from "react";
 import { MyContext } from "./MyContext";
 import { Reducer } from "./Reducer";
 
-const initialState = { books: [], memes: [], videos: [] };
+const initialState = { books: [], searchString: "", memes: [], videos: [] };
 
 export default function Container(props) {
   const [state, dispatch] = useReducer(Reducer, initialState);
