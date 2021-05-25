@@ -1,0 +1,21 @@
+.icons-menu {
+  text-align: center;
+  z-index: 15;
+  a {
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(151, 151, 151);
+    border-radius: 50%;
+    padding: 2rem;
+    margin: 1rem;
+    border: 1px solid transparent;
+    transition: all 0.15s;
+  }
+
+  a:hover {
+    color: rgb(208, 245, 153);
+    background-color: rgba(255, 105, 180, 0.521);
+    border-radius: 50%;
+    border: 1px solid hotpink;
+  }
+}

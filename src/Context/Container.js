@@ -2,7 +2,13 @@ import React, { useEffect, useReducer } from "react";
 import { MyContext } from "./MyContext";
 import { Reducer } from "./Reducer";
 
-const initialState = { books: [], searchString: "", memes: [], videos: [] };
+const initialState = {
+  books: [],
+  filteredBooks: [],
+  searchString: "",
+  memes: [],
+  videos: [],
+};
 
 export default function Container(props) {
   const [state, dispatch] = useReducer(Reducer, initialState);
@@ -94,6 +100,7 @@ export default function Container(props) {
         books: state.books,
         memes: state.memes,
         videos: state.videos,
+        filteredBooks: state.filteredBooks,
 
         dispatch,
       }}

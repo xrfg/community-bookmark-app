@@ -1,0 +1,27 @@
+header {
+  background-image: linear-gradient(rgb(108, 196, 255), khaki);
+  padding: 2rem;
+
+  h3 {
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+      1px 1px 0 black, 1px 1px 8px black;
+  }
+  h3:hover {
+    color: hotpink;
+    animation: flip 1s infinite ease alternate-reverse;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(90deg);
+    transform-origin: center;
+  }
+  100% {
+    transform: rotateX(0);
+  }
+}

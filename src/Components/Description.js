@@ -14,11 +14,7 @@ export default function Description() {
           toilet paper so stare at the wall, play with food and get confused by
           dust but toilet paper attack claws fluff everywhere meow miao french
           ciao litterbox, catch mouse and gave it as a present so with tail in
-          the air. Toilet paper attack claws fluff everywhere meow miao french
-          ciao litterbox. Lick master's hand at first then bite because im moody
-          terrorize the hundred-and-twenty-pound rottweiler and steal his bed,
-          not sorry or cats go for world domination but behind the couch sit by
-          the fire.
+          the air.
         </p>
       </div>
     </div>
