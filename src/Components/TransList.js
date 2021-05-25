@@ -39,7 +39,7 @@ export default function TransList() {
             name="search"
             className="searchbar__input"
             type="text"
-            placeholder="search"
+            placeholder="Search"
           />
         </label>
       </form>
