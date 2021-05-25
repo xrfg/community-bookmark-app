@@ -1,10 +1,10 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { MyContext } from "../Context/MyContext";
 import "../Sass/TransList.scss";
 import TransListContainer from "./TransListContainer";
 
 export default function TransList() {
-  const { books, dispatch } = useContext(MyContext);
+  const { books, filteredBooks, dispatch } = useContext(MyContext);
 
   const input = useRef();
 
@@ -43,7 +43,7 @@ export default function TransList() {
           />
         </label>
       </form>
-      <TransListContainer books={books} />
+      <TransListContainer books={filteredBooks} />
     </>
   );
 }
